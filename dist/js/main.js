@@ -52,6 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+	var myModalCamp = document.getElementById('myModalCamp');
+	var myInputCamp = document.getElementById('myInputCamp');
+
+	myModalCamp.addEventListener('shown.bs.modal', function () {
+		if (myInputCamp) {
+			myInputCamp.focus();
+		}
+	});
+});
+
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
 	direction: 'horizontal',
