@@ -6,6 +6,7 @@
 <title>Методические разработки</title>
 <!-- Подключение Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,7 +54,8 @@
                     Также хочется уделить внимание презентации «Предметно-развивающая среда в кабинете начальных классов», где подробно рассказано, какие требования должны быть в кабинете начальных классов.</p>
                 </div>
                 <div class="block-modal">
-                    <input class="btn btn-custom button-smile" type="image" src="img/smile.svg" width="80" height="80" value="Открыть модальное окно" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-animation="false">
+                    <!-- <input class="btn btn-custom button-smile" type="image" src="img/smile.svg" width="80" height="80" value="Открыть модальное окно" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-animation="false"> -->
+                    <input class="btn btn-custom button-smile" type="image" src="img/smile.svg" width="80" height="80" value="Открыть модальное окно" data-bs-toggle="modal" data-bs-target="#myModals" data-bs-animation="false">
                 </div>
             </div>
           </div>
@@ -89,8 +91,62 @@
         </div>
     </main>
 
+    <div class="modal-slide">
+        <!-- Модальное окно -->
+        <div id="myModals" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Модальное окно</h5>
+                    </div>
+                    <div class="modal-body">   
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/slide/slide-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/slide/slide-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/slide/slide-3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/slide/slide-4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/slide/slide-5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/slide/slide-6.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/slide/slide-7.jpg" alt="">
+                            </div>
+                            ...
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-buttons">
+                                <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
 <!-- Подключение Bootstrap JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

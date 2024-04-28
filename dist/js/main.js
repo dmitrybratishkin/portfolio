@@ -40,3 +40,31 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	});
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+	var myModals = document.getElementById('myModals');
+	var myInputs = document.getElementById('myInputs');
+
+	myModals.addEventListener('shown.bs.modal', function () {
+		if (myInputs) {
+			myInputs.focus();
+		}
+	});
+});
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	direction: 'horizontal',
+	loop: false,
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  
+	// And if we need scrollbar
+	scrollbar: {
+	  el: '.swiper-scrollbar',
+	},
+  });
