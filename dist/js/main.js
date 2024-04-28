@@ -20,6 +20,7 @@ function showModal (openTrigger, modalContent){
 			modalContainer.classList.remove('qfurs-show-modal');
 		});
 	}
+	console.log('openModal');
 }
 
 /* Активация popup 
@@ -27,4 +28,15 @@ function showModal (openTrigger, modalContent){
 document.addEventListener('DOMContentLoaded', function(){
 	showModal('.qfurs-trigger-1','#qfurs-modal-1');
 	showModal('.qfurs-trigger-2','#qfurs-modal-2');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+	var myModal = document.getElementById('myModal');
+	var myInput = document.getElementById('myInput');
+
+	myModal.addEventListener('shown.bs.modal', function () {
+		if (myInput) {
+			myInput.focus();
+		}
+	});
 });

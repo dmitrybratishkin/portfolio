@@ -1,5 +1,15 @@
-body {
-    background: rgb(249,216,201);
+@font-face {
+    font-family: 'Times New Roman';
+    src: url(../fonts/timesnewromanpsmt.ttf);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(249,216,201);
+    font-family: 'Times New Roman', Times, serif;
 }
 .ava {
     display: block;
@@ -133,14 +143,11 @@ body {
 }
 .modal-button {
     color: white;
-    background-color: white;
+    background-color: black;
     border-radius:1dvh;
     padding: 5px 5px 5px 5px;
 }
 
-* {
-    box-sizing: border-box;
-  }
   
 .buttons {
     display: flex;
@@ -156,3 +163,53 @@ body {
 .modal-texts {
     padding-bottom: 10px;
 }
+.button-text {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 85px;
+    padding-right: 85px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.logo {
+    margin-right: 100px;
+}
+.logo:not(:first-child):not(:last-child) {
+    margin-right: 100px;
+}
+.navbar-text {
+    padding-right: 50px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+  .col-3 {
+    height: 200px;
+    width: 33.333%; /* Можно задать любую другую ширину блока */
+    margin: .5rem;
+  }
+  .row {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      margin-top: 500px;
+  }
+  .container {
+    max-width: 75rem;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .modal-block {
+    max-width: 33%;
+  }
+  .buttons {
+    margin-left: 10px;
+  }

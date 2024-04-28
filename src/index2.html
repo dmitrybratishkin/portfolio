@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class="heading">Организационно-методическая продукция</h1>
+      <header class="header">
+        <div class="header-navbar">
+          <div class="logo">
+            <a href="index2.html" class="navbar-logo"><img src="img/free-logo.svg" alt="logo"></a>
+          </div>
+          <div class="navbar-link">
+            <a class="navbar-text" href="index2.html">Главная</a>
+            <a class="navbar-text" href="index2.html">О себе</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <h1 class="heading">Организационно-методическая продукция</h1>
     <h2 class="heading">На своем сайте, могу предложить разработку методической продукции для учителей, учеников и родителей. </h2>
 
     <div class="row">
@@ -24,27 +37,24 @@
                     </div>
                     <div class="modal-body">    
                         <img class="booklet" src="img/booklet.jpg" alt="">
-                      <ul>
-               <li class="modal-one">Держи спину прямо, а плечи на одной высоте</li>
-               <li class="modal-one">Не опирайся грудью на стол. Между столом и телом должен умещаться 
-                кулачок</li>
-               <li class="modal-one">Руки положи на стол</li>
-               <li class="modal-one">Занимай сиденье стула полностью</li>
-               <li class="modal-one">Ноги всей ступней поставь на пол</li>
-               <li class="modal-one">Расстояние до тетради должно быть около 30 см</li>
-               <li class="modal-one">Монитор компьютера должен располагаться перед глазами</li>
-               <li class="modal-one">Расстояние до монитора- не менее 50 см</li>
-               </ul>
+                        <ul>
+                        <li class="modal-one">Держи спину прямо, а плечи на одной высоте</li>
+                        <li class="modal-one">Не опирайся грудью на стол. Между столом и телом должен умещаться кулачок</li>
+                        <li class="modal-one">Руки положи на стол</li>
+                        <li class="modal-one">Занимай сиденье стула полностью</li>
+                        <li class="modal-one">Ноги всей ступней поставь на пол</li>
+                        <li class="modal-one">Расстояние до тетради должно быть около 30 см</li>
+                        <li class="modal-one">Монитор компьютера должен располагаться перед глазами</li>
+                        <li class="modal-one">Расстояние до монитора- не менее 50 см</li>
+                        </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="buttons"><button class="modal-button" href="#openModal">
-                <svg class="button-smile" width="30" height="30">
-                    <use href="img/smile-svgrepo-com.svg#inst"></use>
-                </svg>
-              </button></div>
-        </div>
+              <div class="buttons"><button class="modal-button">
+                <a class="button-text" href="#openModal">Открыть модальное окно</a></button>
+              </div>
+            </div>
         <div class="col-3">
             <div class="modal-block-text">
                 <p>Для родителей будет полезна памятка «Собираем ребенка в лагерь» для более эффективной подготовки ученика в лагерь</p>
@@ -74,7 +84,9 @@
                 </div>
               </div>
 
-              <div class="buttons"><button class="modal-button" href="#openModal">Открыть модальное окно</button></div>
+              <div class="buttons"><button class="modal-button">
+                <a class="button-text" href="#openModal">Открыть модальное окно</a></button>
+              </div>
         </div>
         <div class="col-3">
             <div class="modal-block-text">
@@ -108,32 +120,13 @@
               </div>
               
 
-              <div class="buttons"><button class="modal-button" href="#openModal">Открыть модальное окно</button></div>
+              <div class="buttons"><button class="modal-button">
+                <a class="button-text" href="#openModal">Открыть модальное окно</a></button>
+              </div>
         </div>
       </div>
-    <div id="openModal" class="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Памятка</h3>
-              <a href="#close" title="Close" class="close">×</a>
-            </div>
-            <div class="modal-body">    
-                <img class="booklet" src="img/booklet.jpg" alt="">
-              <ul>
-       <li class="modal-one">Держи спину прямо, а плечи на одной высоте</li>
-       <li class="modal-one">Не опирайся грудью на стол. Между столом и телом должен умещаться 
-        кулачок</li>
-       <li class="modal-one">Руки положи на стол</li>
-       <li class="modal-one">Занимай сиденье стула полностью</li>
-       <li class="modal-one">Ноги всей ступней поставь на пол</li>
-       <li class="modal-one">Расстояние до тетради должно быть около 30 см</li>
-       <li class="modal-one">Монитор компьютера должен располагаться перед глазами</li>
-       <li class="modal-one">Расстояние до монитора- не менее 50 см</li>
-       </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      </main>
+      
+      <script src="js/main.js"></script>
 </body>
 </html>
