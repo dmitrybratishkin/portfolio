@@ -13,7 +13,7 @@ html body {
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 25%;
 }
 
 .modal-header, .modal-body {
@@ -86,9 +86,6 @@ html body {
   .block-text {
     flex: 1;
   }
-  .block-modal {
-    margin-left: auto;
-  }
   
   .block2 {
     min-width: 300px; /* Минимальная ширина блока */
@@ -126,4 +123,9 @@ html body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+.block-modal {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 }

@@ -63,6 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+	var myModalCamps = document.getElementById('myModalCamps');
+	var myInputCamps = document.getElementById('myInputCamps');
+
+	myModalCamps.addEventListener('shown.bs.modal', function () {
+		if (myInputCamps) {
+			myInputCamps.focus();
+		}
+	});
+});
+
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
 	direction: 'horizontal',
